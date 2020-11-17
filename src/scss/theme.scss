@@ -1,0 +1,74 @@
+.reveal {
+    @apply bg-gray-800 text-gray-100;
+
+    .controls button {
+        @apply text-gray-600;
+    }
+
+    .progress {
+        @apply bg-gray-700;
+
+        span {
+            @apply bg-gray-600;
+        }
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    @apply font-extralight;
+}
+
+h1 { @apply text-6xl; }
+h2 { @apply text-4xl; }
+h3 { @apply text-2xl; }
+h4 { @apply font-bold; }
+
+p {
+    @apply font-light leading-relaxed text-2xl my-6;
+}
+
+blockquote {
+    @apply bg-gray-700 shadow-lg mx-auto my-6 p-6 w-4/5;
+
+    p {
+        @apply italic text-4xl leading-relaxed;
+    }
+}
+
+code {
+    @apply font-mono leading-normal inline-block bg-gray-700 rounded shadow m-1 px-2 py-1;
+}
+
+pre {
+    @apply rounded shadow-lg bg-ocean-dark mx-auto my-6 p-6 max-w-full;
+
+    > code {
+        @apply font-mono leading-normal text-xl text-left block rounded-none shadow-none m-0 p-0;
+    }
+}
+
+table {
+    @apply text-left mx-auto my-6;
+
+    thead {
+        th {
+            @apply font-bold border-b-2 border-white px-4 py-2;
+        }
+    }
+
+    td {
+        @apply px-4 py-2;
+    }
+}
+
+a {
+    @apply text-teal-400;
+
+    &:hover {
+        @apply underline;
+    }
+}
+
+hr {
+    @apply border-gray-700 my-8;
+}
